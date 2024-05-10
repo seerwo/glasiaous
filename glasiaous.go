@@ -26,7 +26,7 @@ type Gasiaous struct {
 }
 
 // NewGasiaous init
-func NewYangmatou() *Gasiaous {
+func NewGasiaous() *Gasiaous {
 	return &Gasiaous{}
 }
 

@@ -17,8 +17,8 @@ import (
 )
 
 const(
-	HTTP_BASE_URL = "https://onlinedemo.glasiaous.com/SNM_DEMO"
-	HTTP_TEST_URL = "https://onlinedemo.glasiaous.com/SNM_DEMO"
+	HTTP_BASE_URL = "https://glcloud-com05.glasiaous.com/GLAS/api/publish"
+	HTTP_TEST_URL = "https://onlinedemo.glasiaous.com/SNM_DEMO/api/publish"
 )
 
 //HTTPGet get 请求

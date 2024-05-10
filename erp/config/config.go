@@ -2,7 +2,7 @@ package config
 
 import "github.com/seerwo/glasiaous/cache"
 
-// Config config for yangyue
+// Config config for erp
 type Config struct {
 	AppID          string `json:"app_id"`           //appid
 	AppSecret      string `json:"app_secret"`       //appsecret

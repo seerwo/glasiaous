@@ -242,131 +242,131 @@ type SoSaveData struct {
 }
 
 type Value struct {
-	FieldId string `json:"FieldId"`
+	FieldId   string `json:"FieldId"`
 	FieldName string `json:"FieldName"`
-	Value string `json:"Value"`
-	Col int `json:"Col"`
+	Value     string `json:"Value"`
+	Col       int    `json:"Col"`
 }
-
+//
 type SoSaveKeyValue struct {
-	InputDate string `json:"inputDate"`
-	VoucherNo string `json:"voucherNo"`
-	CustomerNo string `json:"customerNo"`
-	SucceedVoucherNo string `json:"succeedVoucherNo"`
-	CorrespType string `json:"correspType"`
-	CustomerCode string `json:"customerCode"`
-	DelivToCode string `json:"delivToCode"`
-	DeptCode string `json:"deptCode"`
-	InchargeCode string `json:"inchargeCode"`
-	ArPatternCode string `json:"ar_PatternCode"`
-	CurrencyCode string `json:"currencyCode"`
-	RateTypeCode string `json:"rateTypeCode"`
-	Rate string `json:"rate"`
-	TaxableCode string `json:"taxableCode"`
-	ForConditionList string `json:"forConditionList"`
-	TaxType string `json:"taxType"`
-	HeaderDescriptCode string `json:"header_DescriptCode"`
-	HeaderDescriptDescirptName string `json:"Header_DescriptDescirptName"`
-	PostpadColor string `json:"postpadColor"`
-	PostpadText string `json:"postpadText"`
-	SettleMethod string `json:"settleMethod"`
-	BankAcctOwn string `json:"bankAcct_Own"`
-	PaymentTerms string `json:"paymentTerms"`
-	DueDate string `json:"dueDate"`
-	FileName string `json:"fileName"`
-	HeaderUserMaster string `json:"header_UserMaster"`
-	HeaderUserText string `json:"header_UserText"`
-	HeaderFlexMaster1 string `json:"header_FlexMaster1"`
-	HeaderFlexMaster2 string `json:"header_FlexMaster2"`
-	HeaderFlexCode1 string `json:"header_FlexCode1"`
-	HeaderFlexCode2 string `json:"header_FlexCode2"`
-	HeaderFlexText1 string `json:"header_FlexText1"`
-	HeaderFlexText2 string `json:"header_FlexText2"`
-	HeaderFlexText3 string `json:"header_FlexText3"`
-	HeaderFlexText4 string `json:"header_FlexText4"`
-	HeaderFlexText5 string `json:"header_FlexText5"`
-	HeaderFlexDate string `json:"header_FlexDate"`
-	Remarks1 string `json:"remarks1"`
-	Remarks2 string `json:"remarks2"`
-	Remarks3 string `json:"remarks3"`
-	Remarks4 string `json:"remarks4"`
-	Remarks5 string `json:"remarks5"`
-	Remarks6 string `json:"remarks6"`
-	Remarks7 string `json:"remarks7"`
-	Remarks8 string `json:"remarks8"`
-	Remarks9 string `json:"remarks9"`
-	Remarks10 string `json:"remarks10"`
-	Remarks11 string `json:"remarks11"`
-	Remarks12 string `json:"remarks12"`
-	Remarks13 string `json:"remarks13"`
-	Remarks14 string `json:"remarks14"`
-	Remarks15 string `json:"remarks15"`
-	Remarks16 string `json:"remarks16"`
-	Remarks17 string `json:"remarks17"`
-	Remarks18 string `json:"remarks18"`
-	Remarks19 string `json:"remarks19"`
-	Remarks20 string `json:"remarks20"`
-	Remarks21 string `json:"remarks21"`
-	Remarks22 string `json:"remarks22"`
-	Remarks23 string `json:"remarks23"`
-	Remarks24 string `json:"remarks24"`
-	Remarks25 string `json:"remarks25"`
-	Remarks26 string `json:"remarks26"`
-	Remarks27 string `json:"remarks27"`
-	Remarks28 string `json:"remarks28"`
-	Remarks29 string `json:"remarks29"`
-	Remarks30 string `json:"remarks30"`
-	RowNo string `json:"rowNo"`
-	DetailType string `json:"detailType"`
-	DetailDeptCode string `json:"detail_DeptCode"`
-	Warehouse string `json:"warehouse"`
-	LocationCode string `json:"locationCode"`
-	GoodsGroup string `json:"goodsGroup"`
-	GoodsCode string `json:"goodsCode"`
-	ChargesCode string `json:"chargesCode"`
-	CorrespGoods string `json:"corresp_Goods"`
-	UnitType string `json:"unitType"`
-	DetailTaxableCode string `json:"detail_TaxableCode"`
-	DetailTaxType string `json:"detail_TaxType"`
-	UnitPrice string `json:"unitPrice"`
-	Qty string `json:"qty"`
-	InpAmountF string `json:"inpAmount_Fc"`
-	TaxAmountFc string `json:"taxAmount_Fc"`
-	InpAmountSc string `json:"inpAmount_Sc"`
-	TaxAmountSc string `json:"taxAmount_Sc"`
-	TaxableAmountSc string `json:"taxableAmount_Sc"`
-	PackingUnitCode string `json:"packingUnitCode"`
-	PackingUnitPrice string `json:"packingUnitPrice"`
-	PackingUnitQty string `json:"packingUnitQty"`
-	PreshippingDate string `json:"preshippingDate"`
-	DelivDate string `json:"delivDate"`
-	DetailDescriptCode string `json:"detail_Descript_Code"`
-	DetailDescriptName string `json:"detail_Descript_Name"`
-	DetailUserMaster1 string `json:"detail_UserMaster1"`
-	DetailUserMaster2 string `json:"detail_UserMaster2"`
-	DetailUserMaster3 string `json:"detail_UserMaster3"`
-	DetailUserMaster4 string `json:"detail_UserMaster4"`
-	DetailUserMaster5 string `json:"detail_UserMaster5"`
-	DetailUserCode string `json:"detail_UserCode"`
-	DetailUserText string `json:"detail_UserText"`
-	DetailUserDate string `json:"detail_UserDate"`
-	DetailUserQty string `json:"detail_UserQty"`
-	DetailFlexMaster string `json:"detail_FlexMaster"`
-	DetailFlexCode string `json:"detail_FlexCode"`
-	DetailFlexText1 string `json:"detail_FlexText1"`
-	DetailFlexText2 string `json:"detail_FlexText2"`
-	DetailFlexDate string `json:"detail_FlexDate"`
-	SubDescriptCode string `json:"sub_Descript_Code"`
-	SubDescriptName string `json:"sub_Descript_Name"`
-	SubUserMaster1 string `json:"sub_UserMaster1"`
-	SubUserMaster2 string `json:"sub_UserMaster2"`
-	SubUserMaster3 string `json:"sub_UserMaster3"`
-	SubUserMaster4 string `json:"sub_UserMaster4"`
-	SubUserMaster5 string `json:"sub_UserMaster5"`
-	SubUserCode string `json:"sub_UserCode"`
-	SubUserDate string `json:"Sub_UserDate"`
-	SpriceCode string `json:"spriceCode"`
-	SpriceIndex string `json:"spriceIndex"`
+	InputDate string `json:"inputDate" comment:"計上日"`
+	VoucherNo string `json:"voucherNo" comment:"伝票No."`
+	CustomerNo string `json:"customerNo" comment:"客先注文No"`
+	SucceedVoucherNo string `json:"succeedVoucherNo" comment:""`
+	CorrespType string `json:"correspType" comment:"取引先区分"`
+	CustomerCode string `json:"customerCode" comment:"取引先"`
+	DelivToCode string `json:"delivToCode" comment:"納品先/納入元"`
+	DeptCode string `json:"deptCode" comment:"部門"`
+	InchargeCode string `json:"inchargeCode" comment:"担当者"`
+	ArPatternCode string `json:"ar_PatternCode" comment:"取引パターン"`
+	CurrencyCode string `json:"currencyCode" comment:"通貨"`
+	RateTypeCode string `json:"rateTypeCode" comment:"レートタイプ"`
+	Rate string `json:"rate" comment:"レート"`
+	TaxableCode string `json:"taxableCode" comment:""`
+	ForConditionList string `json:"forConditionList" comment:"ヘッダ課税区分"`
+	TaxType string `json:"taxType" comment:"内税/外税区分"`
+	HeaderDescriptCode string `json:"header_DescriptCode" comment:"伝票摘要コード"`
+	HeaderDescriptDescirptName string `json:"Header_DescriptDescirptName" comment:"伝票摘要内容"`
+	PostpadColor string `json:"postpadColor" comment:"付箋紙色"`
+	PostpadText string `json:"postpadText" comment:"付箋紙内容"`
+	SettleMethod string `json:"settleMethod" comment:"決済方法"`
+	BankAcctOwn string `json:"bankAcct_Own" comment:"自社口座"`
+	PaymentTerms string `json:"paymentTerms" comment:"回収条件"`
+	DueDate string `json:"dueDate" comment:"決済予定日"`
+	FileName string `json:"fileName" comment:"ファイル名"`
+	HeaderUserMaster string `json:"header_UserMaster" comment:"ヘッダユーザマスタ"`
+	HeaderUserText string `json:"header_UserText" comment:"ヘッダユーザテキスト"`
+	HeaderFlexMaster1 string `json:"header_FlexMaster1" comment:"ヘッダフレックスマスタ1"`
+	HeaderFlexMaster2 string `json:"header_FlexMaster2" comment:"ヘッダフレックスマスタ2"`
+	HeaderFlexCode1 string `json:"header_FlexCode1" comment:"ヘッダフレックスコード1"`
+	HeaderFlexCode2 string `json:"header_FlexCode2" comment:"ヘッダフレックスコード2"`
+	HeaderFlexText1 string `json:"header_FlexText1" comment:"ヘッダフレックステキスト1"`
+	HeaderFlexText2 string `json:"header_FlexText2" comment:"ヘッダフレックステキスト2"`
+	HeaderFlexText3 string `json:"header_FlexText3" comment:"ヘッダフレックステキスト3"`
+	HeaderFlexText4 string `json:"header_FlexText4" comment:"ヘッダフレックステキスト4"`
+	HeaderFlexText5 string `json:"header_FlexText5" comment:"ヘッダフレックステキスト5"`
+	HeaderFlexDate string `json:"header_FlexDate" comment:"ヘッダフレックス日付"`
+	Remarks1 string `json:"remarks1" comment:"ﾒﾓ情報1"`
+	Remarks2 string `json:"remarks2" comment:"ﾒﾓ情報2"`
+	Remarks3 string `json:"remarks3" comment:"ﾒﾓ情報3"`
+	Remarks4 string `json:"remarks4" comment:"ﾒﾓ情報4"`
+	Remarks5 string `json:"remarks5" comment:"ﾒﾓ情報5"`
+	Remarks6 string `json:"remarks6" comment:"ﾒﾓ情報6"`
+	Remarks7 string `json:"remarks7" comment:"ﾒﾓ情報7"`
+	Remarks8 string `json:"remarks8" comment:"ﾒﾓ情報8"`
+	Remarks9 string `json:"remarks9" comment:"ﾒﾓ情報9"`
+	Remarks10 string `json:"remarks10" comment:"ﾒﾓ情報10"`
+	Remarks11 string `json:"remarks11" comment:"ﾒﾓ情報11"`
+	Remarks12 string `json:"remarks12" comment:"ﾒﾓ情報12"`
+	Remarks13 string `json:"remarks13" comment:"ﾒﾓ情報13"`
+	Remarks14 string `json:"remarks14" comment:"ﾒﾓ情報14"`
+	Remarks15 string `json:"remarks15" comment:"ﾒﾓ情報15"`
+	Remarks16 string `json:"remarks16" comment:"ﾒﾓ情報16"`
+	Remarks17 string `json:"remarks17" comment:"ﾒﾓ情報17"`
+	Remarks18 string `json:"remarks18" comment:"ﾒﾓ情報18"`
+	Remarks19 string `json:"remarks19" comment:"ﾒﾓ情報19"`
+	Remarks20 string `json:"remarks20" comment:"ﾒﾓ情報20"`
+	Remarks21 string `json:"remarks21" comment:"ﾒﾓ情報21"`
+	Remarks22 string `json:"remarks22" comment:"ﾒﾓ情報22"`
+	Remarks23 string `json:"remarks23" comment:"ﾒﾓ情報23"`
+	Remarks24 string `json:"remarks24" comment:"ﾒﾓ情報24"`
+	Remarks25 string `json:"remarks25" comment:"ﾒﾓ情報25"`
+	Remarks26 string `json:"remarks26" comment:"ﾒﾓ情報26"`
+	Remarks27 string `json:"remarks27" comment:"ﾒﾓ情報27"`
+	Remarks28 string `json:"remarks28" comment:"ﾒﾓ情報28"`
+	Remarks29 string `json:"remarks29" comment:"ﾒﾓ情報29"`
+	Remarks30 string `json:"remarks30" comment:"ﾒﾓ情報30"`
+	RowNo string `json:"rowNo" comment:""`
+	DetailType string `json:"detailType" comment:"明細区分（品目・諸掛）"`
+	DetailDeptCode string `json:"detail_DeptCode" comment:"部門"`
+	Warehouse string `json:"warehouse" comment:"倉庫"`
+	LocationCode string `json:"locationCode" comment:"ロケーション"`
+	GoodsGroup string `json:"goodsGroup" comment:"品目グループ"`
+	GoodsCode string `json:"goodsCode" comment:"品目"`
+	ChargesCode string `json:"chargesCode" comment:"諸掛"`
+	CorrespGoods string `json:"corresp_Goods" comment:"取引先品番"`
+	UnitType string `json:"unitType" comment:"単位計上/荷姿単位計上"`
+	DetailTaxableCode string `json:"detail_TaxableCode" comment:"課税区分"`
+	DetailTaxType string `json:"detail_TaxType" comment:"内税/外税区分"`
+	UnitPrice string `json:"unitPrice" comment:"単価"`
+	Qty string `json:"qty" comment:"数量"`
+	InpAmountF string `json:"inpAmount_Fc" comment:"入力金額"`
+	TaxAmountFc string `json:"taxAmount_Fc" comment:"入力税額"`
+	InpAmountSc string `json:"inpAmount_Sc" comment:"入力税対象金額"`
+	TaxAmountSc string `json:"taxAmount_Sc" comment:"基準税額"`
+	TaxableAmountSc string `json:"taxableAmount_Sc" comment:"基準税対象金額"`
+	PackingUnitCode string `json:"packingUnitCode" comment:"荷姿コード"`
+	PackingUnitPrice string `json:"packingUnitPrice" comment:"荷姿単価"`
+	PackingUnitQty string `json:"packingUnitQty" comment:"荷姿数量"`
+	PreshippingDate string `json:"preshippingDate" comment:"出荷予定日"`
+	DelivDate string `json:"delivDate" comment:"納入期日"`
+	DetailDescriptCode string `json:"detail_Descript_Code" comment:"明細摘要コード"`
+	DetailDescriptName string `json:"detail_Descript_Name" comment:"明細摘要内容"`
+	DetailUserMaster1 string `json:"detail_UserMaster1" comment:"明細ユーザマスタ1"`
+	DetailUserMaster2 string `json:"detail_UserMaster2" comment:"明細ユーザマスタ2"`
+	DetailUserMaster3 string `json:"detail_UserMaster3" comment:"明細ユーザマスタ3"`
+	DetailUserMaster4 string `json:"detail_UserMaster4" comment:"明細ユーザマスタ4"`
+	DetailUserMaster5 string `json:"detail_UserMaster5" comment:"明細ユーザマスタ5"`
+	DetailUserCode string `json:"detail_UserCode" comment:"明細ユーザコード"`
+	DetailUserText string `json:"detail_UserText" comment:"明細ユーザテキスト"`
+	DetailUserDate string `json:"detail_UserDate" comment:"明細ユーザ日付"`
+	DetailUserQty string `json:"detail_UserQty" comment:"明細ユーザ数量"`
+	DetailFlexMaster string `json:"detail_FlexMaster" comment:"明細フレックスマスタ"`
+	DetailFlexCode string `json:"detail_FlexCode" comment:"明細フレックスコード"`
+	DetailFlexText1 string `json:"detail_FlexText1" comment:"明細フレックステキスト1"`
+	DetailFlexText2 string `json:"detail_FlexText2" comment:"明細フレックステキスト2"`
+	DetailFlexDate string `json:"detail_FlexDate" comment:"明細フレックス日付"`
+	SubDescriptCode string `json:"sub_Descript_Code" comment:"明細摘要コード"`
+	SubDescriptName string `json:"sub_Descript_Name" comment:"明細摘要内容"`
+	SubUserMaster1 string `json:"sub_UserMaster1" comment:"明細ユーザマスタ1"`
+	SubUserMaster2 string `json:"sub_UserMaster2" comment:"明細ユーザマスタ2"`
+	SubUserMaster3 string `json:"sub_UserMaster3" comment:"明細ユーザマスタ3"`
+	SubUserMaster4 string `json:"sub_UserMaster4" comment:"明細ユーザマスタ4"`
+	SubUserMaster5 string `json:"sub_UserMaster5" comment:"明細ユーザマスタ5"`
+	SubUserCode string `json:"sub_UserCode" comment:"明細ユーザコード"`
+	SubUserDate string `json:"Sub_UserDate" comment:"明細ユーザ日付"`
+	SpriceCode string `json:"spriceCode" comment:""`
+	SpriceIndex string `json:"spriceIndex" comment:""`
 }
 
 type SoSaveRes struct {
@@ -404,8 +404,37 @@ func (order *Order) GetOrderSearch(req SoSearchReq) (res SoSearchRes, err error)
 	if err != nil {
 		return
 	}
-	uri := fmt.Sprintf(util.HTTP_BASE_URL, order.AppID, ORDER_SO_SEARCH)
+	uri := fmt.Sprintf(util.HTTP_BASE_URL +  ORDER_SO_SEARCH)
 	var response []byte
+
+	response, err = util.NewHTTPPost(uri, accessParam)
+	fmt.Println(uri, accessParam)
+	if err != nil {
+		return
+	}
+	fmt.Println(string(response))
+	err = json.Unmarshal(response, &res)
+	if err != nil {
+		return
+	}
+	if res.Status != 0{
+		err = fmt.Errorf("GetOrderSearch Error , errcode=%d , errmsg=%d", res.Status, res.Totals)
+		return
+	}
+	return
+}
+
+//GetOrderSearch get so order
+func (order *Order) GetOrderSave(req SoSaveReq) (res SoSaveRes, err error) {
+
+	var accessParam string
+	accessParam, err = order.GetAccessParam(ORDER_SO_SAVE, req)
+	if err != nil {
+		return
+	}
+	uri := fmt.Sprintf(util.HTTP_BASE_URL + ORDER_SO_SAVE)
+	var response []byte
+	fmt.Println(uri, accessParam)
 	response, err = util.NewHTTPPost(uri, accessParam)
 
 	if err != nil {
@@ -416,7 +445,7 @@ func (order *Order) GetOrderSearch(req SoSearchReq) (res SoSearchRes, err error)
 		return
 	}
 	if res.Status != 0{
-		err = fmt.Errorf("GetOrderListGet Error , errcode=%s , errmsg=%s", res.Status, res.Totals)
+		err = fmt.Errorf("GetOrderSave Error , errcode=%d , errmsg=%s", res.Status, res.SaveStatus)
 		return
 	}
 	return

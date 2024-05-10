@@ -11,7 +11,7 @@ import (
 
 const (
 	//AccessTokenURL 获取access_token的接口
-	accessTokenURL = "https://onlinedemo.glasiaous.com/SNM_DEMO/api/security/login2"
+	accessTokenURL = "https://glcloud-com05.glasiaous.com/GLAS/api/security/login2"
 	//CacheKeyOfficialAccountPrefix 微信公众号cache key前缀
 	CacheKeyGaErpPrefix = "ga_erp_"
 	//CacheKeyMiniProgramPrefix 小程序cache key前缀
@@ -59,13 +59,21 @@ func  (ak *DefaultAccessToken)GetAccessParam(method string, req interface{})(acc
 	m := map[string]string{}
 
 	m["company"] = ak.appID
-	m["userID"] = ak.appID
+	m["userID"] = "000066"
 	m["Password"] = ak.appSecret
 	m["lang"] = "ja-JP"
-	m["userkey"] = "testAPI"
+	m["userkey"] = "glaAPI"
 
+
+	m1 := make(map[string]interface{})
 	j, _ := json.Marshal(req)
-	m["data"] = string(j)
+	json.Unmarshal(j, &m1)
+
+	for key , v :=range m1 {
+		m[key] = util.Interface2String(v)
+	}
+
+	//m["Data"] = string(j)
 
 	//if m["sign"],err = util.ParamSign(m, ak.appSecret); err != nil {
 	//	return

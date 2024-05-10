@@ -8,7 +8,7 @@ import (
 	"github.com/seerwo/glasiaous/erp/order"
 )
 
-//Erp yangyue relate api
+//Erp erp relate api
 type ERP struct {
 	ctx *context.Context
 }
